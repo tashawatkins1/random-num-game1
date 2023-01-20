@@ -5,3 +5,18 @@
 
 console.log('Welcome to random number game!');
 let num = 0;
+
+function generateRandomNumber(){
+  num = Math.floor(Math.random() * 10);
+  return num;
+}
+
+function differenceFromAnswer(guess, answer){
+  if(guess = answer)
+    console.log("Woohoo, you are correct");
+  else(console.log("You are wrong"));
+  
+}
+
+guess = prompt("Guess a num? ")
+console.log(differenceFromAnswer(guess,generateRandomNumber()));
